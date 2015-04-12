@@ -176,9 +176,7 @@
                 value = file.ReadByte
             End While
         Else
-            For index As Integer = 1 To resolution.Width * resolution.Height - 1
-                values(index) = file.ReadByte
-            Next
+            file.Read(values, 0, resolution.Width * resolution.Height)
         End If
         file.Close()
     End Sub

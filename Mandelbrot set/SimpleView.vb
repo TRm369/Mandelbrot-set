@@ -1,4 +1,5 @@
-﻿Public Class SimpleView
+﻿
+Public Class SimpleView
 
     Private Sub btnGenerate_Click(sender As Object, e As EventArgs) Handles btnGenerate.Click
         If MsgBox("Generate synchronously? Do not use unless necessary!", MsgBoxStyle.YesNo) = MsgBoxResult.No Then
